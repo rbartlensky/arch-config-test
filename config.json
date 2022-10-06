@@ -2,9 +2,9 @@
     "audio": null,
     "bootloader": "systemd-bootctl",
     "harddrives": [
-        "/dev/<YOUR_DRIVE>"
+        "/dev/YOUR_DRIVE"
     ],
-    "hostname": "<YOUR_HOSTNAME>",
+    "hostname": "YOUR_HOSTNAME",
     "kernels": [
         "linux"
     ],
@@ -14,12 +14,8 @@
             "https://mirror.rackspace.com/archlinux/$repo/os/$arch": true
         }
     },
-    // "nic": {
-    //     "type": "NM"
-    // },
     "ntp": true,
     "packages": ["vim"],
-    // "profile": null,
     "script": "guided",
     "swap": true,
     "sys-encoding": "utf-8",

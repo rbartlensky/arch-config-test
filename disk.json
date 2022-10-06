@@ -1,5 +1,5 @@
 {
-    "/dev/<YOUR_DEVICE>": {
+    "/dev/YOUR_DRIVE": {
         "partitions": [
             {
                 "boot": true,
@@ -16,7 +16,8 @@
             {
                 "ext4": {
                     "subvolumes": {
-                        "@home": "/home",
+                        "@": "/",
+                        "@home": "/home"
                     }
                 },
                 "encrypted": true,
