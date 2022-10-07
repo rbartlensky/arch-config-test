@@ -17,9 +17,10 @@
     "ntp": true,
     "packages": [
         "emacs",
-        "i3",
+        "fish",
         "vim"
     ],
+    "profile": "i3",
     "script": "guided",
     "swap": true,
     "sys-encoding": "utf-8",
