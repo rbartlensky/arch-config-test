@@ -1,6 +1,6 @@
 {
-    "audio": null,
-    "bootloader": "systemd-bootctl",
+    "audio": "pulseaudio",
+    "bootloader": "grub-install",
     "harddrives": [
         "/dev/YOUR_DRIVE"
     ],
@@ -15,7 +15,11 @@
         }
     },
     "ntp": true,
-    "packages": ["vim"],
+    "packages": [
+        "emacs",
+        "i3",
+        "vim"
+    ],
     "script": "guided",
     "swap": true,
     "sys-encoding": "utf-8",
