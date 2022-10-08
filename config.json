@@ -2,7 +2,8 @@
     "audio": "pulseaudio",
     "bootloader": "grub-install",
     "custom-commands": [
-        "git clone --bare https://github.com/rbartlensky/dotfiles /home/YOUR_USERNAME/.dotfiles"
+        "git clone --bare https://github.com/rbartlensky/dotfiles /home/YOUR_USERNAME/.dotfiles",
+        "/usr/bin/git --git-dir=/home/YOUR_USERNAME/.dotfiles/ --work-tree=/home/YOUR_USERNAME checkout --force"
     ],
     "gfx_driver": "VMware / VirtualBox (open-source)",
     "harddrives": [
@@ -11,11 +12,6 @@
     "hostname": "YOUR_HOSTNAME",
     "kernels": ["linux"],
     "keyboard-layout": "us",
-    "mirror-region": {
-        "Worldwide": {
-            "https://mirror.rackspace.com/archlinux/$repo/os/$arch": true
-        }
-    },
     "nic": {
     	"type": "nm",
         "dns": ["1.1.1.1"]
@@ -23,19 +19,34 @@
     "ntp": true,
     "packages": [
         "alacritty",
+        "base-devel",
+        "cgdb",
+        "curl",
         "emacs",
+        "fd",
         "firefox",
-        "jq",
-        "git",
         "fish",
+        "git",
+        "gnupg",
+        "jq",
+        "neomutt",
+        "okular",
+        "openssh",
+        "python",
+        "ranger",
+        "ripgrep",
+        "rustup",
+        "tmux",
         "vim",
+        "vlc",
+
         "lightdm",
         "lightdm-gtk-greeter",
 
+	"dmenu",
+	"i3status",
         "i3-wm",
         "i3lock",
-	"i3status",
-	"dmenu",
         "xterm"
     ],
     "profile": "xorg",
