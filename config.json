@@ -2,8 +2,8 @@
     "audio": "pulseaudio",
     "bootloader": "grub-install",
     "custom-commands": [
-        "git clone --bare https://github.com/rbartlensky/dotfiles /home/YOUR_USERNAME/.dotfiles",
-        "/usr/bin/git --git-dir=/home/YOUR_USERNAME/.dotfiles/ --work-tree=/home/YOUR_USERNAME checkout --force"
+        "sudo -u YOUR_USERNAME git clone --bare https://github.com/rbartlensky/dotfiles /home/YOUR_USERNAME/.dotfiles",
+        "sudo -u YOUR_USERNAME /usr/bin/git --git-dir=/home/YOUR_USERNAME/.dotfiles/ --work-tree=/home/YOUR_USERNAME checkout --force"
     ],
     "gfx_driver": "VMware / VirtualBox (open-source)",
     "harddrives": [
