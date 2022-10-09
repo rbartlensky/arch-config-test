@@ -5,7 +5,7 @@
         "sudo -u YOUR_USERNAME git clone --bare https://github.com/rbartlensky/dotfiles /home/YOUR_USERNAME/.dotfiles",
         "sudo -u YOUR_USERNAME /usr/bin/git --git-dir=/home/YOUR_USERNAME/.dotfiles/ --work-tree=/home/YOUR_USERNAME checkout --force"
     ],
-    "gfx_driver": "VMware / VirtualBox (open-source)",
+    "gfx_driver": "All open-source (default)",
     "harddrives": [
         "/dev/YOUR_DRIVE"
     ],
